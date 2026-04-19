@@ -1,0 +1,37 @@
+.tab {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+#t1:checked ~ .tab1 {
+    display: block;
+    
+}
+#t2:checked ~ .tab2 {
+    display: block;
+    
+}
+#t3:checked ~ .tab3 {
+    display: block;
+    
+}
+
+#t1:checked + label {
+    text-decoration:underline;
+    background-color: #aaa;
+}
+
+
+#t2:checked + label {
+    text-decoration:underline;
+    background-color: #aaa;
+}
+
+
+#t3:checked + label {
+    text-decoration:underline;
+    background-color: #aaa;
+}
