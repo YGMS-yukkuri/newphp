@@ -2,5 +2,5 @@ div {
     width: 100px;
     height: 100px;
     background-color: aqua;
-    clip-path: polygon(0 50%, 0 100%, 100% 100%);
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
