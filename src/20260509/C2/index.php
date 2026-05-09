@@ -5,7 +5,7 @@ $ok = false;
         header("Location:". "https://google.co.jp");
     };
     if ($_POST["age"] >= 18) {
-        $ok = 1;
+        header("Location:". "welcome.php");
     };
 };
 ?>
@@ -17,14 +17,11 @@ $ok = false;
     <title>Document</title>
 </head>
 <body>
-    <?php if ($ok === false):?>
+
     <form method="POST">
         <label for="age">年齢</label>
         <input type="number" name="age" id="age">
         <button type="submit">認証</button>
-    </form>    
-    <? else:?>
-        <h1>Welcome</h1>
-    <? endif?>
+    </form>
 </body>
 </html>
