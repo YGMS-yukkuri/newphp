@@ -1,0 +1,15 @@
+body {
+    background-color: #FFF;
+    color: #000;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%
+}

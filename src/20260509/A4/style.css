@@ -1,0 +1,83 @@
+.back {
+    width: 500px;
+    height: 150px;
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid #000;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #555;
+}
+
+.light {
+    width: 130px;
+    height: 130px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: red;
+    animation: red 8s infinite;
+}
+
+.green {
+    background-color: green;
+    animation: green 8s infinite;
+}
+
+.yellow {
+    background-color: yellow;
+    animation: yellow 8s infinite;
+}
+
+@keyframes green {
+    0% {
+        opacity: 1;
+    }
+    49.9% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes yellow {
+    0% {
+        opacity: 0.8;
+    }
+    49.9% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 1;
+    }
+    62.5% {
+        opacity: 1;
+    }
+    62.6% {
+        opacity: 0.8;
+    }
+    100% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes red {
+    0% {
+        opacity: 0.8;
+    }
+    62.5% {
+        opacity: 0.8;
+    }
+    62.6% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

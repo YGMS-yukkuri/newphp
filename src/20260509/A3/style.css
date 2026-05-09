@@ -1,0 +1,9 @@
+#a:checked + label {
+    text-decoration:line-through;
+}
+#b:checked + label {
+    text-decoration:line-through;
+}
+#c:checked + label {
+    text-decoration:line-through;
+}

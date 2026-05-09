@@ -1,0 +1,31 @@
+#traffic-light,
+#traffic-light::before,
+#traffic-light::after {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+#traffic-light::before,
+#traffic-light::after {
+	content: "";
+  display: block;
+  position: absolute;
+}
+
+#traffic-light {
+  position: relative;
+	background-color: #ffff00;
+	position: relative;
+  left: 100px;
+}
+
+#traffic-light::before {
+	background-color: #00ff00;
+  right: 100%;
+}
+
+#traffic-light::after {
+	background-color: #ff0000;
+  left: 100%;
+}
