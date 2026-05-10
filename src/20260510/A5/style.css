@@ -1,0 +1,23 @@
+div {
+    width: 0;
+    height: 0;
+    border-color: orange;
+    border-style: solid;
+
+    /*animation: a 5s infinite; */
+}
+
+@keyframes a {
+    from {
+        border-width: 100px;
+
+    } 50% {
+        border-top: transparent;
+        border-left: transparent;
+        border-right: transparent;
+        border-bottom: 100px;
+    }
+    100% {
+        border-width: 100px;
+    }
+}
