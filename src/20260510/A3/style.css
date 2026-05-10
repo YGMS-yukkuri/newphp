@@ -27,3 +27,7 @@ input:checked + label {
 input:checked + label .cir {
     left: 250px;
 }
+
+input {
+    display: none;
+}
