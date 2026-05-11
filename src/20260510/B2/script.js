@@ -1,25 +1,38 @@
-const table = document.querySelector("table")
-const inp = document.getElementById("inp")
-const button = document.getElementById("reg")
-
+/** @type {HTMLElement} */
+const list = document.querySelector("#list");
+/** @type {HTMLInputElement} */
+const input = document.querySelector("#inp");
+/** @type {HTMLButtonElement} */
+const button = document.querySelector("#reg")
 
 button.addEventListener("click", () => {
-    if (inp.value = "") return;
-    const tr = document.createElement("tr")
-    const td1 = document.createElement("td")
-    td1.textContent = inp.value
-    tr.appendChild(td1)
-    const td2 = document.createElement("td")
-    const tdbtn1 = document.createElement("button").addEventListener("click", (e) => {
-        parent.querySelector("td").classList.add("clear")
-    })
-    tdbtn1.textContent = "完了"
-    const tdbtn2 = document.createElement("button").addEventListener("click", (e) => {
-        parent.querySelector("td").classList.remove("clear")
-    })
-    tdbtn2.textContent = "未完了"
-    td2.appendChild(tdbtn1)
-    td2.appendChild(tdbtn2)
-
-    tr.appendChild(td2)
+    add()
 })
+
+function add() {
+    const text = input.value;
+    if (text === "") return
+
+    const li = document.createElement("li")
+
+    li.textContent = text;
+
+    const button1 = document.createElement("button")
+    button1.textContent = "完了"
+    button1.addEventListener("click", () => {
+        const lili = button1.parentElement
+        lili.classList.add("clear")
+    })
+
+    const button2 = document.createElement("button")
+    button2.textContent = "未完了"
+    button2.addEventListener("click", () => {
+        const lili = button2.parentElement
+        lili.classList.remove("clear")
+    })
+    li.appendChild(button1)
+    
+    li.appendChild(button2)
+
+    list.appendChild(li)
+}
