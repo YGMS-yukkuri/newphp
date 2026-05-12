@@ -2,12 +2,12 @@
 date_default_timezone_set("Japan");
 $filename = "db.json";
 if(!file_exists($filename)) {
-    file_put_contents($filename,null);
-    $json = [];
+    file_put_contents($filename,json_encode([]));
+    $data = [];
 } else {
     $json = file_get_contents($filename);
+    $data = json_decode($json,true) ?? [];
 };
-$data = json_decode($json,true);
 
 if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["message"])) {
     $message = $_POST["message"];
@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["message"])) {
 
 if($_SERVER["REQUEST_METHOD"] === "POST" && isset($_POST["idx"])) {
     $reidx = $_POST["idx"];
-    $arrkey = array_search($reidx,$data);
+    $arrkey = array_search($reidx,array_column($data, "id"));
     unset($data[$arrkey]);
     $data = array_values($data);
     file_put_contents($filename,json_encode($data));
