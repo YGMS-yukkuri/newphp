@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.cross {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.cross div {
+    width: 50px;
+    height: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+}
+
+.cross div:nth-child(1) {
+    rotate: 45deg;
+}
+
+.cross div:nth-child(2) {
+    rotate: -45deg;
+}
+
+.info {
+    background-color: skyblue;
+}
+
+.suc {
+    background-color: green;
+}
+
+.war {
+    background-color: orange;
+}
+
+.err {
+    background-color: rgb(233, 81, 81);
+}
