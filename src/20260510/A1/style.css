@@ -1,0 +1,45 @@
+/*
+body {
+    display: flex;
+}
+
+label {
+    width: 500px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 5px;
+background-color: #aaa;
+padding: 5px;
+}
+
+input {
+    display: none;
+}
+
+label div {
+    display: none;
+}
+
+label h2 {
+    background-color: #aaa;
+}
+
+input:checked + label div {
+    display: block;
+    background-color: lightblue;
+}
+*/
+body {
+    display: flex;
+}
+
+details {
+    border: 1px solid #000;
+    background-color: aliceblue;
+    width: 500px;
+}
+
+summary {
+    background-color: #aaa;
+    padding: 5px;
+}

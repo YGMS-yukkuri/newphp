@@ -1,0 +1,7 @@
+input:checked + label li {
+    text-decoration: line-through;
+}
+
+input {
+    display: none;
+}

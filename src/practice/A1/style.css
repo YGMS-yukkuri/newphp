@@ -1,0 +1,18 @@
+input {
+    display: none;
+}
+
+.in {
+    max-height: 0;
+    transition: .5s;
+    overflow: hidden;
+}
+
+input:checked ~ .in {
+    height: fit-content;
+    max-height: 100px;
+}
+.a {
+    border: 1px solid #000;
+    width: 300px;
+}
